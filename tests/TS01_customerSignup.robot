@@ -13,6 +13,7 @@ Resource         ../PO/SignUpPage.robot
 
 *** Test Cases ***
 TC01 Validate Signup Process
+	[Tags]          NEW_SIGNUP
 	LandingPage.Click on Register Link
     SignUpPage.Fill the Signup form with valid data and click on Register       ${user_name}        ${password}
     SignUpPage.Verify the confirmation message and user is logged in
@@ -20,6 +21,7 @@ TC01 Validate Signup Process
 TC02 Verify Signup Process when username already exists
 	LandingPage.Click on Register Link
     SignUpPage.Fill the Signup form with valid data and click on Register       ${user_name}        ${password}
+    Generic.Wait Until element passed is located on Page
     SignUpPage.Verify error message when username already exists
 
 TC03 Verify Signup Process when password and confirm password do not match

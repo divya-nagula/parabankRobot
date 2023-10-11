@@ -14,6 +14,7 @@ ${no_password}  ${EMPTY}
 
 *** Test Cases ***
 TC01 Verify login with valid credentials
+	[Tags]          NEW_SIGNUP
 	LandingPage.Fill the login form     ${username}         ${password}
     HomePage.wait until element is located on the page
     Log    Login Successful

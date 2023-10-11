@@ -9,13 +9,13 @@ Library          OperatingSystem
 Library          DateTime
 
 *** Variables ***
-${user_name}            first3
+${user_name}            first6
 ${password}             password
 ${url}                  https://parabank.parasoft.com/parabank/index.htm
 ${browser_name}         Chrome
 ${file_name}            screenshots
 ${default_screenshot_path}      C:/Users/bittu.saishreyas/PycharmProjects/parabankRobotProject/Screenshots
-
+${title}                        css:.title
 *** Keywords ***
 Init
 	Register Keyword To Run On Failure  Screenshots_Directory
