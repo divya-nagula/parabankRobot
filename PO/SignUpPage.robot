@@ -16,9 +16,9 @@ Fill the Signup form with valid data and click on Register
 	Input Text          customer.address.street         street
 	Input Text          customer.address.city           city
 	Input Text          customer.address.state          state
-	Input Text          customer.address.zipCode        74857
-	Input Text          customer.phoneNumber            8527419963
-	Input Text          customer.ssn                    4567891255
+	Input Text          customer.address.zipCode        12345
+	Input Text          customer.phoneNumber            1234567890
+	Input Text          customer.ssn                    9876543210
 	Input Text          customer.username               ${user_name}
 	Input Password      customer.password               ${password}
 	Input Password      repeatedPassword                ${password}

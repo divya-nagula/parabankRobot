@@ -20,7 +20,7 @@ wait until element is located on the page
 verify error message is correct for invalid login credentials
 	${result}=  Get Text    ${Error_Message_Login}
 	log     ${result}
-    Should Be Equal As Strings    ${result}     An internal error has occurred and has been logged.
+    Should Be Equal As Strings    ${result}     The username and password could not be verified.
 
 verify error message is correct for empty login credentials
 	${result}=  Get Text    ${Error_Message_Login}
