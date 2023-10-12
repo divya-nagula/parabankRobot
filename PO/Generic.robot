@@ -14,7 +14,7 @@ ${password}             password
 ${url}                  https://parabank.parasoft.com/parabank/index.htm
 ${browser_name}         Chrome
 ${file_name}            screenshots
-${default_screenshot_path}      C:/Users/bittu.saishreyas/PycharmProjects/parabankRobotProject/Screenshots
+${default_screenshot_path}      C:\Users\bittu.saishreyas\PycharmProjects\GitPush\parabankRobotProject\Screenshots
 ${title}                        css:.title
 *** Keywords ***
 Init
@@ -22,6 +22,7 @@ Init
 
 open the browser with url
 	Create Webdriver    ${browser_name}  resources/${browser_name}
+	Delete All Cookies
 	Go To    ${url}
 	Maximize Browser Window
 
@@ -48,3 +49,6 @@ Screenshots_Directory
 
 Close Browser Session
 	Close Browser
+
+Delete cookies
+	Delete All Cookies

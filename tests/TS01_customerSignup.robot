@@ -8,6 +8,7 @@ Test Teardown    Close Browser Session
 Resource         ../PO/Generic.robot
 Resource         ../PO/LandingPage.robot
 Resource         ../PO/SignUpPage.robot
+
 *** Variables ***
 
 
@@ -21,7 +22,6 @@ TC01 Validate Signup Process
 TC02 Verify Signup Process when username already exists
 	LandingPage.Click on Register Link
     SignUpPage.Fill the Signup form with valid data and click on Register       ${user_name}        ${password}
-    Generic.Wait Until element passed is located on Page
     SignUpPage.Verify error message when username already exists
 
 TC03 Verify Signup Process when password and confirm password do not match
