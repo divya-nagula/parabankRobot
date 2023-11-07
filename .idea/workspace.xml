@@ -5,13 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aed60a5c-6bb8-42c6-b808-a4a1ba071004" name="Changes" comment="new cases">
-      <change beforePath="$PROJECT_DIR$/.idea/parabankRobotProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/parabankRobotProject.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PO/Generic.robot" beforeDir="false" afterPath="$PROJECT_DIR$/PO/Generic.robot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/TS01_customerSignup.robot" beforeDir="false" afterPath="$PROJECT_DIR$/tests/TS01_customerSignup.robot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/log.html" beforeDir="false" afterPath="$PROJECT_DIR$/tests/log.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/output.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tests/output.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/report.html" beforeDir="false" afterPath="$PROJECT_DIR$/tests/report.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +75,15 @@
       <option name="project" value="LOCAL" />
       <updated>1697052219835</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="new cases">
+      <option name="closed" value="true" />
+      <created>1697132331088</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1697132331088</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
