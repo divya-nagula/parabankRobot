@@ -3,7 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/parabankRobotProject.iml" filepath="$PROJECT_DIR$/.idea/parabankRobotProject.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../../robotFramework/.idea/robotFramework.iml" filepath="$PROJECT_DIR$/../../robotFramework/.idea/robotFramework.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../pythonBasics/.idea/pythonBasics.iml" filepath="$PROJECT_DIR$/../../pythonBasics/.idea/pythonBasics.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../pythonSelFramework1/.idea/pythonSelFramework1.iml" filepath="$PROJECT_DIR$/../../pythonSelFramework1/.idea/pythonSelFramework1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../pythonTesting1/.idea/pythonTesting1.iml" filepath="$PROJECT_DIR$/../../pythonTesting1/.idea/pythonTesting1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../pythonTestingProject/.idea/pythonTestingProject.iml" filepath="$PROJECT_DIR$/../../pythonTestingProject/.idea/pythonTestingProject.iml" />
     </modules>
   </component>
 </project>
