@@ -6,9 +6,7 @@
     </content>
     <orderEntry type="jdk" jdkName="Python 3.11 (4)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module" module-name="pythonBasics" />
     <orderEntry type="module" module-name="pythonSelFramework1" />
-    <orderEntry type="module" module-name="pythonTesting1" />
-    <orderEntry type="module" module-name="pythonTestingProject" />
+    <orderEntry type="module" module-name="guru99insurance" />
   </component>
 </module>

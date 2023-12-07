@@ -1,39 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.1.1 (Python 3.11.5 on win32)" generated="20231117 23:13:52.786" rpa="false" schemaversion="4">
+<robot generator="Robot 6.1.1 (Python 3.11.5 on win32)" generated="20231208 00:17:54.087" rpa="false" schemaversion="4">
 <suite id="s1" name="TS03 accounts" source="C:\Users\bittu.saishreyas\PycharmProjects\GitPush\parabankRobotProject\tests\TS03_accounts.robot">
 <kw name="Init" library="Generic" type="SETUP">
 <kw name="Register Keyword To Run On Failure" library="SeleniumLibrary">
 <arg>Screenshots_Directory</arg>
 <doc>Sets the keyword to execute, when a SeleniumLibrary keyword fails.</doc>
-<msg timestamp="20231117 23:13:53.224" level="INFO">Screenshots_Directory will be run on failure.</msg>
-<status status="PASS" starttime="20231117 23:13:53.224" endtime="20231117 23:13:53.224"/>
+<msg timestamp="20231208 00:17:54.521" level="INFO">Screenshots_Directory will be run on failure.</msg>
+<status status="PASS" starttime="20231208 00:17:54.520" endtime="20231208 00:17:54.521"/>
 </kw>
-<status status="PASS" starttime="20231117 23:13:53.224" endtime="20231117 23:13:53.224"/>
+<status status="PASS" starttime="20231208 00:17:54.519" endtime="20231208 00:17:54.521"/>
 </kw>
-<test id="s1-t1" name="TC01 Verify User's Account details" line="17">
+<test id="s1-t1" name="TC02 Create New Account" line="21">
 <kw name="open the browser with url" library="Generic" type="SETUP">
 <kw name="Create Webdriver" library="SeleniumLibrary">
 <arg>${browser_name}</arg>
 <arg>resources/${browser_name}</arg>
 <doc>Creates an instance of Selenium WebDriver.</doc>
-<msg timestamp="20231117 23:13:53.224" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
-<status status="PASS" starttime="20231117 23:13:53.224" endtime="20231117 23:13:55.066"/>
+<msg timestamp="20231208 00:17:54.524" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<status status="PASS" starttime="20231208 00:17:54.523" endtime="20231208 00:17:56.462"/>
 </kw>
 <kw name="Delete All Cookies" library="SeleniumLibrary">
 <doc>Deletes all cookies.</doc>
-<status status="PASS" starttime="20231117 23:13:55.066" endtime="20231117 23:13:57.318"/>
+<status status="PASS" starttime="20231208 00:17:56.462" endtime="20231208 00:17:59.280"/>
 </kw>
 <kw name="Go To" library="SeleniumLibrary">
 <arg>${url}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20231117 23:13:57.318" level="INFO">Opening url 'https://parabank.parasoft.com/parabank/index.htm'</msg>
-<status status="PASS" starttime="20231117 23:13:57.318" endtime="20231117 23:14:02.304"/>
+<msg timestamp="20231208 00:17:59.281" level="INFO">Opening url 'https://parabank.parasoft.com/parabank/index.htm'</msg>
+<status status="PASS" starttime="20231208 00:17:59.280" endtime="20231208 00:18:04.176"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20231117 23:14:02.304" endtime="20231117 23:14:02.444"/>
+<status status="PASS" starttime="20231208 00:18:04.176" endtime="20231208 00:18:04.316"/>
 </kw>
-<status status="PASS" starttime="20231117 23:13:53.224" endtime="20231117 23:14:02.444"/>
+<status status="PASS" starttime="20231208 00:17:54.522" endtime="20231208 00:18:04.316"/>
 </kw>
 <kw name="Fill the login form" library="LandingPage">
 <arg>${username}</arg>
@@ -42,675 +42,267 @@
 <arg>css:.input[name='username']</arg>
 <arg>${username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20231117 23:14:02.449" level="INFO">Typing text 'first6' into text field 'css:.input[name='username']'.</msg>
-<status status="PASS" starttime="20231117 23:14:02.447" endtime="20231117 23:14:02.584"/>
+<msg timestamp="20231208 00:18:04.318" level="INFO">Typing text 'first6' into text field 'css:.input[name='username']'.</msg>
+<status status="PASS" starttime="20231208 00:18:04.318" endtime="20231208 00:18:04.518"/>
 </kw>
 <kw name="Input Password" library="SeleniumLibrary">
 <arg>css:.input[name='password']</arg>
 <arg>${password}</arg>
 <doc>Types the given password into the text field identified by ``locator``.</doc>
-<msg timestamp="20231117 23:14:02.589" level="INFO">Typing password into text field 'css:.input[name='password']'.</msg>
-<msg timestamp="20231117 23:14:02.635" level="INFO">Temporally setting log level to: NONE</msg>
-<msg timestamp="20231117 23:14:02.711" level="INFO">Log level changed from NONE to INFO.</msg>
-<status status="PASS" starttime="20231117 23:14:02.584" endtime="20231117 23:14:02.711"/>
+<msg timestamp="20231208 00:18:04.520" level="INFO">Typing password into text field 'css:.input[name='password']'.</msg>
+<msg timestamp="20231208 00:18:04.570" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20231208 00:18:04.665" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20231208 00:18:04.519" endtime="20231208 00:18:04.666"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>css:.button[value='Log In']</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20231117 23:14:02.711" level="INFO">Clicking button 'css:.button[value='Log In']'.</msg>
-<status status="PASS" starttime="20231117 23:14:02.711" endtime="20231117 23:14:05.544"/>
+<msg timestamp="20231208 00:18:04.667" level="INFO">Clicking button 'css:.button[value='Log In']'.</msg>
+<status status="PASS" starttime="20231208 00:18:04.666" endtime="20231208 00:18:06.648"/>
 </kw>
-<status status="PASS" starttime="20231117 23:14:02.446" endtime="20231117 23:14:05.544"/>
-</kw>
-<kw name="Get all Account Details" library="AccountOverviewPage">
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>xpath://table/thead</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20231117 23:14:05.558" endtime="20231117 23:14:05.597"/>
-</kw>
-<kw name="Get WebElements" library="SeleniumLibrary">
-<var>@{headers}</var>
-<arg>xpath://table/thead/tr/th</arg>
-<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
-<msg timestamp="20231117 23:14:05.603" level="INFO">@{headers} = [ &lt;selenium.webdriver.remote.webelement.WebElement (session="15de091ffce1212c0126e51b6cd628a3", element="39399B5BF2FD65B0306E370705775408_element_280")&gt; | &lt;selenium.webdriver.remote.webelement.WebElem...</msg>
-<status status="PASS" starttime="20231117 23:14:05.597" endtime="20231117 23:14:05.603"/>
-</kw>
-<kw name="Create List" library="BuiltIn">
-<var>@{headers_list}</var>
-<doc>Returns a list containing given items.</doc>
-<msg timestamp="20231117 23:14:05.603" level="INFO">@{headers_list} = [ ]</msg>
-<status status="PASS" starttime="20231117 23:14:05.603" endtime="20231117 23:14:05.603"/>
-</kw>
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>xpath://table/tbody</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20231117 23:14:05.603" endtime="20231117 23:14:05.637"/>
-</kw>
-<for flavor="IN">
-<var>${header}</var>
-<value>@{headers}</value>
-<iter>
-<var name="${header}">&lt;selenium.webdriver.remote.webelement.WebElement (session="15de091ffce1212c0126e51b6cd628a3", element="39399B5BF2FD65B0306E370705775408_element_280")&gt;</var>
-<kw name="Append To List" library="Collections">
-<arg>${headers_list}</arg>
-<arg>${header.text}</arg>
-<doc>Adds ``values`` to the end of ``list``.</doc>
-<status status="PASS" starttime="20231117 23:14:05.637" endtime="20231117 23:14:05.667"/>
-</kw>
-<status status="PASS" starttime="20231117 23:14:05.637" endtime="20231117 23:14:05.667"/>
-</iter>
-<iter>
-<var name="${header}">&lt;selenium.webdriver.remote.webelement.WebElement (session="15de091ffce1212c0126e51b6cd628a3", element="39399B5BF2FD65B0306E370705775408_element_282")&gt;</var>
-<kw name="Append To List" library="Collections">
-<arg>${headers_list}</arg>
-<arg>${header.text}</arg>
-<doc>Adds ``values`` to the end of ``list``.</doc>
-<status status="PASS" starttime="20231117 23:14:05.668" endtime="20231117 23:14:05.670"/>
-</kw>
-<status status="PASS" starttime="20231117 23:14:05.668" endtime="20231117 23:14:05.670"/>
-</iter>
-<iter>
-<var name="${header}">&lt;selenium.webdriver.remote.webelement.WebElement (session="15de091ffce1212c0126e51b6cd628a3", element="39399B5BF2FD65B0306E370705775408_element_284")&gt;</var>
-<kw name="Append To List" library="Collections">
-<arg>${headers_list}</arg>
-<arg>${header.text}</arg>
-<doc>Adds ``values`` to the end of ``list``.</doc>
-<status status="PASS" starttime="20231117 23:14:05.670" endtime="20231117 23:14:05.694"/>
-</kw>
-<status status="PASS" starttime="20231117 23:14:05.670" endtime="20231117 23:14:05.694"/>
-</iter>
-<status status="PASS" starttime="20231117 23:14:05.637" endtime="20231117 23:14:05.694"/>
-</for>
-<kw name="Get Length" library="BuiltIn">
-<var>${header_count}</var>
-<arg>${headers_list}</arg>
-<doc>Returns and logs the length of the given item as an integer.</doc>
-<msg timestamp="20231117 23:14:05.694" level="INFO">Length is 3</msg>
-<msg timestamp="20231117 23:14:05.694" level="INFO">${header_count} = 3</msg>
-<status status="PASS" starttime="20231117 23:14:05.694" endtime="20231117 23:14:05.694"/>
-</kw>
-<kw name="Log" library="BuiltIn">
-<arg>The table has ${header_count} columns.</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20231117 23:14:05.695" level="INFO">The table has 3 columns.</msg>
-<status status="PASS" starttime="20231117 23:14:05.694" endtime="20231117 23:14:05.695"/>
-</kw>
-<kw name="Log" library="BuiltIn">
-<arg>${headers_list}</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20231117 23:14:05.695" level="INFO">['Account', 'Balance*', 'Available Amount']</msg>
-<status status="PASS" starttime="20231117 23:14:05.695" endtime="20231117 23:14:05.695"/>
-</kw>
-<kw name="Get WebElements" library="SeleniumLibrary">
-<var>@{numbers_of_accounts}</var>
-<arg>xpath://table/tbody/tr/td/a</arg>
-<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
-<msg timestamp="20231117 23:14:05.704" level="INFO">@{numbers_of_accounts} = [ &lt;selenium.webdriver.remote.webelement.WebElement (session="15de091ffce1212c0126e51b6cd628a3", element="39399B5BF2FD65B0306E370705775408_element_288")&gt; ]</msg>
-<status status="PASS" starttime="20231117 23:14:05.695" endtime="20231117 23:14:05.704"/>
-</kw>
-<kw name="Get Length" library="BuiltIn">
-<var>${user_account_count}</var>
-<arg>${numbers_of_accounts}</arg>
-<doc>Returns and logs the length of the given item as an integer.</doc>
-<msg timestamp="20231117 23:14:05.704" level="INFO">Length is 1</msg>
-<msg timestamp="20231117 23:14:05.704" level="INFO">${user_account_count} = 1</msg>
-<status status="PASS" starttime="20231117 23:14:05.704" endtime="20231117 23:14:05.704"/>
-</kw>
-<kw name="Log" library="BuiltIn">
-<arg>The user has ${user_account_count} account(s).</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20231117 23:14:05.704" level="INFO">The user has 1 account(s).</msg>
-<status status="PASS" starttime="20231117 23:14:05.704" endtime="20231117 23:14:05.704"/>
-</kw>
-<kw name="Create List" library="BuiltIn">
-<var>@{all_accounts_list}</var>
-<doc>Returns a list containing given items.</doc>
-<msg timestamp="20231117 23:14:05.704" level="INFO">@{all_accounts_list} = [ ]</msg>
-<status status="PASS" starttime="20231117 23:14:05.704" endtime="20231117 23:14:05.704"/>
-</kw>
-<for flavor="IN">
-<var>${each_account}</var>
-<value>@{numbers_of_accounts}</value>
-<iter>
-<var name="${each_account}">&lt;selenium.webdriver.remote.webelement.WebElement (session="15de091ffce1212c0126e51b6cd628a3", element="39399B5BF2FD65B0306E370705775408_element_288")&gt;</var>
-<kw name="Create Dictionary" library="BuiltIn">
-<var>&amp;{account_details}</var>
-<doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<msg timestamp="20231117 23:14:05.704" level="INFO">&amp;{account_details} = { }</msg>
-<status status="PASS" starttime="20231117 23:14:05.704" endtime="20231117 23:14:05.704"/>
-</kw>
-<for flavor="IN">
-<var>${account}</var>
-<value>@{numbers_of_accounts}</value>
-<iter>
-<var name="${account}">&lt;selenium.webdriver.remote.webelement.WebElement (session="15de091ffce1212c0126e51b6cd628a3", element="39399B5BF2FD65B0306E370705775408_element_288")&gt;</var>
-<kw name="Get WebElement" library="SeleniumLibrary">
-<var>${balance}</var>
-<arg>xpath://table/tbody/tr/td/a[.='${account.text}']/parent::td//following-sibling::td[1]</arg>
-<doc>Returns the first WebElement matching the given ``locator``.</doc>
-<msg timestamp="20231117 23:14:05.737" level="INFO">${balance} = &lt;selenium.webdriver.remote.webelement.WebElement (session="15de091ffce1212c0126e51b6cd628a3", element="39399B5BF2FD65B0306E370705775408_element_290")&gt;</msg>
-<status status="PASS" starttime="20231117 23:14:05.704" endtime="20231117 23:14:05.737"/>
-</kw>
-<kw name="Get WebElement" library="SeleniumLibrary">
-<var>${available_amount}</var>
-<arg>xpath://table/tbody/tr/td/a[.='${account.text}']/parent::td//following-sibling::td[2]</arg>
-<doc>Returns the first WebElement matching the given ``locator``.</doc>
-<msg timestamp="20231117 23:14:05.770" level="INFO">${available_amount} = &lt;selenium.webdriver.remote.webelement.WebElement (session="15de091ffce1212c0126e51b6cd628a3", element="39399B5BF2FD65B0306E370705775408_element_292")&gt;</msg>
-<status status="PASS" starttime="20231117 23:14:05.737" endtime="20231117 23:14:05.770"/>
-</kw>
-<kw name="Set To Dictionary" library="Collections">
-<arg>${account_details}</arg>
-<arg>${headers_list}[0]=${account.text}</arg>
-<arg>${headers_list}[1]=${balance.text}</arg>
-<arg>${headers_list}[2]=${available_amount.text}</arg>
-<doc>Adds the given ``key_value_pairs`` and/or ``items`` to the ``dictionary``.</doc>
-<status status="PASS" starttime="20231117 23:14:05.770" endtime="20231117 23:14:05.811"/>
-</kw>
-<status status="PASS" starttime="20231117 23:14:05.704" endtime="20231117 23:14:05.811"/>
-</iter>
-<status status="PASS" starttime="20231117 23:14:05.704" endtime="20231117 23:14:05.811"/>
-</for>
-<kw name="Append To List" library="Collections">
-<arg>${all_accounts_list}</arg>
-<arg>${account_details}</arg>
-<doc>Adds ``values`` to the end of ``list``.</doc>
-<status status="PASS" starttime="20231117 23:14:05.811" endtime="20231117 23:14:05.812"/>
-</kw>
-<status status="PASS" starttime="20231117 23:14:05.704" endtime="20231117 23:14:05.812"/>
-</iter>
-<status status="PASS" starttime="20231117 23:14:05.704" endtime="20231117 23:14:05.812"/>
-</for>
-<kw name="Log" library="BuiltIn">
-<arg>${all_accounts_list}</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20231117 23:14:05.812" level="INFO">[{'Account': '13788', 'Balance*': '$515.50', 'Available Amount': '$515.50'}]</msg>
-<status status="PASS" starttime="20231117 23:14:05.812" endtime="20231117 23:14:05.812"/>
-</kw>
-<status status="PASS" starttime="20231117 23:14:05.556" endtime="20231117 23:14:05.812"/>
-</kw>
-<kw name="Close Browser Session" library="Generic" type="TEARDOWN">
-<kw name="Close Browser" library="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20231117 23:14:05.813" endtime="20231117 23:14:08.067"/>
-</kw>
-<status status="PASS" starttime="20231117 23:14:05.813" endtime="20231117 23:14:08.067"/>
-</kw>
-<status status="PASS" starttime="20231117 23:13:53.224" endtime="20231117 23:14:08.067"/>
-</test>
-<test id="s1-t2" name="TC02 Create New Account" line="21">
-<kw name="open the browser with url" library="Generic" type="SETUP">
-<kw name="Create Webdriver" library="SeleniumLibrary">
-<arg>${browser_name}</arg>
-<arg>resources/${browser_name}</arg>
-<doc>Creates an instance of Selenium WebDriver.</doc>
-<msg timestamp="20231117 23:14:08.067" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
-<status status="PASS" starttime="20231117 23:14:08.067" endtime="20231117 23:14:10.108"/>
-</kw>
-<kw name="Delete All Cookies" library="SeleniumLibrary">
-<doc>Deletes all cookies.</doc>
-<status status="PASS" starttime="20231117 23:14:10.109" endtime="20231117 23:14:12.208"/>
-</kw>
-<kw name="Go To" library="SeleniumLibrary">
-<arg>${url}</arg>
-<doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20231117 23:14:12.208" level="INFO">Opening url 'https://parabank.parasoft.com/parabank/index.htm'</msg>
-<status status="PASS" starttime="20231117 23:14:12.208" endtime="20231117 23:14:18.494"/>
-</kw>
-<kw name="Maximize Browser Window" library="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20231117 23:14:18.494" endtime="20231117 23:14:18.628"/>
-</kw>
-<status status="PASS" starttime="20231117 23:14:08.067" endtime="20231117 23:14:18.628"/>
-</kw>
-<kw name="Fill the login form" library="LandingPage">
-<arg>${username}</arg>
-<arg>${password}</arg>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>css:.input[name='username']</arg>
-<arg>${username}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20231117 23:14:18.631" level="INFO">Typing text 'first6' into text field 'css:.input[name='username']'.</msg>
-<status status="PASS" starttime="20231117 23:14:18.630" endtime="20231117 23:14:18.763"/>
-</kw>
-<kw name="Input Password" library="SeleniumLibrary">
-<arg>css:.input[name='password']</arg>
-<arg>${password}</arg>
-<doc>Types the given password into the text field identified by ``locator``.</doc>
-<msg timestamp="20231117 23:14:18.764" level="INFO">Typing password into text field 'css:.input[name='password']'.</msg>
-<msg timestamp="20231117 23:14:18.815" level="INFO">Temporally setting log level to: NONE</msg>
-<msg timestamp="20231117 23:14:18.887" level="INFO">Log level changed from NONE to INFO.</msg>
-<status status="PASS" starttime="20231117 23:14:18.763" endtime="20231117 23:14:18.888"/>
-</kw>
-<kw name="Click Button" library="SeleniumLibrary">
-<arg>css:.button[value='Log In']</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20231117 23:14:18.888" level="INFO">Clicking button 'css:.button[value='Log In']'.</msg>
-<status status="PASS" starttime="20231117 23:14:18.888" endtime="20231117 23:14:20.313"/>
-</kw>
-<status status="PASS" starttime="20231117 23:14:18.629" endtime="20231117 23:14:20.313"/>
+<status status="PASS" starttime="20231208 00:18:04.317" endtime="20231208 00:18:06.648"/>
 </kw>
 <kw name="Open New Account" library="AccountOverviewPage">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${title}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20231117 23:14:20.314" endtime="20231117 23:14:20.354"/>
+<status status="PASS" starttime="20231208 00:18:06.649" endtime="20231208 00:18:06.698"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath://div[@id='leftPanel']/ul/li/a[.='Open New Account']</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20231117 23:14:20.355" level="INFO">Clicking element 'xpath://div[@id='leftPanel']/ul/li/a[.='Open New Account']'.</msg>
-<status status="PASS" starttime="20231117 23:14:20.354" endtime="20231117 23:14:20.898"/>
+<msg timestamp="20231208 00:18:06.700" level="INFO">Clicking element 'xpath://div[@id='leftPanel']/ul/li/a[.='Open New Account']'.</msg>
+<status status="PASS" starttime="20231208 00:18:06.699" endtime="20231208 00:18:07.459"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${title}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20231117 23:14:20.898" endtime="20231117 23:14:20.934"/>
+<status status="PASS" starttime="20231208 00:18:07.460" endtime="20231208 00:18:07.500"/>
 </kw>
 <kw name="Element Text Should Be" library="SeleniumLibrary">
 <arg>${title}</arg>
 <arg>Open New Account</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<msg timestamp="20231117 23:14:20.935" level="INFO">Verifying element 'css:.title' contains exact text 'Open New Account'.</msg>
-<status status="PASS" starttime="20231117 23:14:20.934" endtime="20231117 23:14:20.965"/>
+<msg timestamp="20231208 00:18:07.501" level="INFO">Verifying element 'css:.title' contains exact text 'Open New Account'.</msg>
+<status status="PASS" starttime="20231208 00:18:07.500" endtime="20231208 00:18:07.533"/>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
-<arg>xpath=//div[@id='rightPanel']/div/div/form/div/input</arg>
+<arg>xpath://div[@id='rightPanel']/div/div/form/div</arg>
 <arg>ENTER</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20231117 23:14:20.966" level="INFO">Sending key(s) ('ENTER',) to xpath=//div[@id='rightPanel']/div/div/form/div/input element.</msg>
-<msg timestamp="20231117 23:14:21.350" level="INFO">Pressing special key ENTER to element.</msg>
-<msg timestamp="20231117 23:14:21.350" level="INFO">Releasing special key ENTER.</msg>
-<status status="PASS" starttime="20231117 23:14:20.966" endtime="20231117 23:14:21.374"/>
+<msg timestamp="20231208 00:18:07.535" level="INFO">Sending key(s) ('ENTER',) to xpath://div[@id='rightPanel']/div/div/form/div element.</msg>
+<msg timestamp="20231208 00:18:07.845" level="INFO">Pressing special key ENTER to element.</msg>
+<msg timestamp="20231208 00:18:07.845" level="INFO">Releasing special key ENTER.</msg>
+<status status="PASS" starttime="20231208 00:18:07.534" endtime="20231208 00:18:07.854"/>
 </kw>
-<status status="PASS" starttime="20231117 23:14:20.314" endtime="20231117 23:14:21.374"/>
+<status status="PASS" starttime="20231208 00:18:06.649" endtime="20231208 00:18:07.855"/>
 </kw>
 <kw name="Verify Account Details" library="AccountOverviewPage">
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<arg>10seconds</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20231208 00:18:07.856" endtime="20231208 00:18:07.858"/>
+</kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>//a[@id='newAccountId']</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20231117 23:14:21.377" endtime="20231117 23:14:21.873"/>
+<kw name="Screenshots_Directory" library="Generic">
+<kw name="Log" library="BuiltIn">
+<arg>${SUITE NAME}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20231208 00:18:18.122" level="INFO">TS03 accounts</msg>
+<status status="PASS" starttime="20231208 00:18:18.121" endtime="20231208 00:18:18.122"/>
+</kw>
+<kw name="Join Path" library="OperatingSystem">
+<var>${path}</var>
+<arg>${default_screenshot_path}</arg>
+<arg>${SUITE NAME}</arg>
+<doc>Joins the given path part(s) to the given base path.</doc>
+<msg timestamp="20231208 00:18:18.122" level="INFO">${path} = C:Usersbittu.saishreyasPycharmProjectsGitPushparabankRobotProjectScreenshots\TS03 accounts</msg>
+<status status="PASS" starttime="20231208 00:18:18.122" endtime="20231208 00:18:18.122"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${path}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20231208 00:18:18.123" level="INFO">C:Usersbittu.saishreyasPycharmProjectsGitPushparabankRobotProjectScreenshots\TS03 accounts</msg>
+<status status="PASS" starttime="20231208 00:18:18.123" endtime="20231208 00:18:18.123"/>
+</kw>
+<kw name="Create Directory" library="OperatingSystem">
+<var>${screenshots}</var>
+<arg>${path}</arg>
+<doc>Creates the specified directory.</doc>
+<msg timestamp="20231208 00:18:18.124" level="INFO" html="true">Directory '&lt;a href="file://C:\Users\bittu.saishreyas\PycharmProjects\GitPush\parabankRobotProject\tests\Usersbittu.saishreyasPycharmProjectsGitPushparabankRobotProjectScreenshots\TS03 accounts"&gt;C:\Users\bittu.saishreyas\PycharmProjects\GitPush\parabankRobotProject\tests\Usersbittu.saishreyasPycharmProjectsGitPushparabankRobotProjectScreenshots\TS03 accounts&lt;/a&gt;' already exists.</msg>
+<msg timestamp="20231208 00:18:18.124" level="INFO">${screenshots} = None</msg>
+<status status="PASS" starttime="20231208 00:18:18.123" endtime="20231208 00:18:18.124"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${screenshots}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20231208 00:18:18.124" level="INFO">None</msg>
+<status status="PASS" starttime="20231208 00:18:18.124" endtime="20231208 00:18:18.124"/>
+</kw>
+<if>
+<branch type="IF" condition="'${screenshots}' != 'None'">
+<kw name="Set Screenshot Directory" library="SeleniumLibrary">
+<arg>${screenshots}</arg>
+<doc>Sets the directory for captured screenshots.</doc>
+<status status="NOT RUN" starttime="20231208 00:18:18.125" endtime="20231208 00:18:18.125"/>
+</kw>
+<status status="NOT RUN" starttime="20231208 00:18:18.124" endtime="20231208 00:18:18.125"/>
+</branch>
+<branch type="ELSE">
+<kw name="Set Screenshot Directory" library="SeleniumLibrary">
+<arg>${path}</arg>
+<doc>Sets the directory for captured screenshots.</doc>
+<status status="PASS" starttime="20231208 00:18:18.125" endtime="20231208 00:18:18.126"/>
+</kw>
+<status status="PASS" starttime="20231208 00:18:18.125" endtime="20231208 00:18:18.126"/>
+</branch>
+<status status="PASS" starttime="20231208 00:18:18.124" endtime="20231208 00:18:18.126"/>
+</if>
+<kw name="Get Variable Value" library="BuiltIn">
+<var>${screenshot_index}</var>
+<arg>${screenshot_index}</arg>
+<arg>${0}</arg>
+<doc>Returns variable value or ``default`` if the variable does not exist.</doc>
+<msg timestamp="20231208 00:18:18.131" level="INFO">${screenshot_index} = 0</msg>
+<status status="PASS" starttime="20231208 00:18:18.126" endtime="20231208 00:18:18.131"/>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<arg>${screenshot_index}</arg>
+<arg>${screenshot_index.__add__(1)}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<msg timestamp="20231208 00:18:18.133" level="INFO">${screenshot_index} = 1</msg>
+<status status="PASS" starttime="20231208 00:18:18.131" endtime="20231208 00:18:18.133"/>
+</kw>
+<kw name="Get Current Date" library="DateTime">
+<var>${date}</var>
+<arg>result_format=%d.%m.%Y@%H.%M</arg>
+<doc>Returns current local or UTC time with an optional increment.</doc>
+<msg timestamp="20231208 00:18:18.134" level="INFO">${date} = 08.12.2023@00.18</msg>
+<status status="PASS" starttime="20231208 00:18:18.133" endtime="20231208 00:18:18.134"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<arg>${TEST NAME}-${date}-${screenshot_index}.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20231208 00:18:18.298" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Usersbittu.saishreyasPycharmProjectsGitPushparabankRobotProjectScreenshots/TS03%20accounts/TC02%20Create%20New%20Account-08.12.2023%4000.18-1.png"&gt;&lt;img src="Usersbittu.saishreyasPycharmProjectsGitPushparabankRobotProjectScreenshots/TS03%20accounts/TC02%20Create%20New%20Account-08.12.2023%4000.18-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20231208 00:18:18.134" endtime="20231208 00:18:18.298"/>
+</kw>
+<status status="PASS" starttime="20231208 00:18:18.121" endtime="20231208 00:18:18.298"/>
+</kw>
+<msg timestamp="20231208 00:18:18.298" level="FAIL">Element '//a[@id='newAccountId']' not visible after 5 seconds.</msg>
+<status status="FAIL" starttime="20231208 00:18:07.858" endtime="20231208 00:18:18.300"/>
 </kw>
 <kw name="Element Text Should Be" library="SeleniumLibrary">
 <arg>xpath://h1</arg>
 <arg>Account Opened!</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<msg timestamp="20231117 23:14:21.875" level="INFO">Verifying element 'xpath://h1' contains exact text 'Account Opened!'.</msg>
-<status status="PASS" starttime="20231117 23:14:21.874" endtime="20231117 23:14:21.903"/>
+<status status="NOT RUN" starttime="20231208 00:18:18.300" endtime="20231208 00:18:18.300"/>
 </kw>
 <kw name="Get WebElement" library="SeleniumLibrary">
 <var>${new_account_text}</var>
 <arg>//div/p[contains(., 'Congratulations')]</arg>
 <doc>Returns the first WebElement matching the given ``locator``.</doc>
-<msg timestamp="20231117 23:14:21.919" level="INFO">${new_account_text} = &lt;selenium.webdriver.remote.webelement.WebElement (session="2d61d2b058aa889bf87f8a2542f1ed2d", element="BEBC7C1FEA79F8FDB5E0862AA9CB6962_element_440")&gt;</msg>
-<status status="PASS" starttime="20231117 23:14:21.903" endtime="20231117 23:14:21.919"/>
+<status status="NOT RUN" starttime="20231208 00:18:18.300" endtime="20231208 00:18:18.300"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>newAccountId</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20231117 23:14:21.919" endtime="20231117 23:14:21.948"/>
+<status status="NOT RUN" starttime="20231208 00:18:18.301" endtime="20231208 00:18:18.301"/>
 </kw>
 <kw name="Get WebElement" library="SeleniumLibrary">
 <var>${new_account_id}</var>
 <arg>newAccountId</arg>
 <doc>Returns the first WebElement matching the given ``locator``.</doc>
-<msg timestamp="20231117 23:14:21.960" level="INFO">${new_account_id} = &lt;selenium.webdriver.remote.webelement.WebElement (session="2d61d2b058aa889bf87f8a2542f1ed2d", element="BEBC7C1FEA79F8FDB5E0862AA9CB6962_element_445")&gt;</msg>
-<status status="PASS" starttime="20231117 23:14:21.948" endtime="20231117 23:14:21.960"/>
+<status status="NOT RUN" starttime="20231208 00:18:18.301" endtime="20231208 00:18:18.301"/>
 </kw>
 <kw name="Log" library="BuiltIn">
 <arg>${new_account_text.text}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20231117 23:14:21.972" level="INFO">Congratulations, your account is now open.</msg>
-<status status="PASS" starttime="20231117 23:14:21.960" endtime="20231117 23:14:21.972"/>
+<status status="NOT RUN" starttime="20231208 00:18:18.301" endtime="20231208 00:18:18.301"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${new_account_id}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20231117 23:14:21.973" level="INFO">Clicking element '&lt;selenium.webdriver.remote.webelement.WebElement (session="2d61d2b058aa889bf87f8a2542f1ed2d", element="BEBC7C1FEA79F8FDB5E0862AA9CB6962_element_445")&gt;'.</msg>
-<status status="PASS" starttime="20231117 23:14:21.972" endtime="20231117 23:14:22.460"/>
+<status status="NOT RUN" starttime="20231208 00:18:18.301" endtime="20231208 00:18:18.301"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>accountId</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20231117 23:14:22.461" endtime="20231117 23:14:22.494"/>
+<status status="NOT RUN" starttime="20231208 00:18:18.301" endtime="20231208 00:18:18.301"/>
 </kw>
 <kw name="Get WebElements" library="SeleniumLibrary">
 <var>@{account_details_rows}</var>
 <arg>xpath://div[@id='rightPanel']/div/div/h1[.='Account Details']/parent::div/table/tbody/tr/td[1]</arg>
 <doc>Returns a list of WebElement objects matching the ``locator``.</doc>
-<msg timestamp="20231117 23:14:22.510" level="INFO">@{account_details_rows} = [ &lt;selenium.webdriver.remote.webelement.WebElement (session="2d61d2b058aa889bf87f8a2542f1ed2d", element="22C4C604A67C528179B93A1FC1ECFB04_element_523")&gt; | &lt;selenium.webdriver.remote.webelement.WebElem...</msg>
-<status status="PASS" starttime="20231117 23:14:22.494" endtime="20231117 23:14:22.510"/>
+<status status="NOT RUN" starttime="20231208 00:18:18.301" endtime="20231208 00:18:18.301"/>
 </kw>
 <kw name="Create Dictionary" library="BuiltIn">
 <var>&amp;{account_details}</var>
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<msg timestamp="20231117 23:14:22.511" level="INFO">&amp;{account_details} = { }</msg>
-<status status="PASS" starttime="20231117 23:14:22.510" endtime="20231117 23:14:22.511"/>
+<status status="NOT RUN" starttime="20231208 00:18:18.301" endtime="20231208 00:18:18.302"/>
 </kw>
 <for flavor="IN">
 <var>${row}</var>
 <value>@{account_details_rows}</value>
 <iter>
-<var name="${row}">&lt;selenium.webdriver.remote.webelement.WebElement (session="2d61d2b058aa889bf87f8a2542f1ed2d", element="22C4C604A67C528179B93A1FC1ECFB04_element_523")&gt;</var>
+<var name="${row}"/>
 <kw name="Get WebElement" library="SeleniumLibrary">
 <var>${column}</var>
 <arg>xpath://div[@id='rightPanel']/div/div/h1[.='Account Details']/parent::div/table/tbody/tr/td[1]/following-sibling::td</arg>
 <doc>Returns the first WebElement matching the given ``locator``.</doc>
-<msg timestamp="20231117 23:14:22.527" level="INFO">${column} = &lt;selenium.webdriver.remote.webelement.WebElement (session="2d61d2b058aa889bf87f8a2542f1ed2d", element="22C4C604A67C528179B93A1FC1ECFB04_element_525")&gt;</msg>
-<status status="PASS" starttime="20231117 23:14:22.511" endtime="20231117 23:14:22.527"/>
+<status status="NOT RUN" starttime="20231208 00:18:18.302" endtime="20231208 00:18:18.302"/>
 </kw>
 <kw name="Log" library="BuiltIn">
 <arg>${row.text}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20231117 23:14:22.539" level="INFO">Account Number:</msg>
-<status status="PASS" starttime="20231117 23:14:22.527" endtime="20231117 23:14:22.539"/>
+<status status="NOT RUN" starttime="20231208 00:18:18.302" endtime="20231208 00:18:18.302"/>
 </kw>
 <kw name="Log" library="BuiltIn">
 <arg>${column.text}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20231117 23:14:22.539" level="INFO"/>
-<status status="PASS" starttime="20231117 23:14:22.539" endtime="20231117 23:14:22.539"/>
+<status status="NOT RUN" starttime="20231208 00:18:18.302" endtime="20231208 00:18:18.302"/>
 </kw>
 <kw name="Set To Dictionary" library="Collections">
 <arg>${account_details}</arg>
 <arg>${row.text}=${column.text}</arg>
 <doc>Adds the given ``key_value_pairs`` and/or ``items`` to the ``dictionary``.</doc>
-<status status="PASS" starttime="20231117 23:14:22.539" endtime="20231117 23:14:22.591"/>
+<status status="NOT RUN" starttime="20231208 00:18:18.302" endtime="20231208 00:18:18.302"/>
 </kw>
-<status status="PASS" starttime="20231117 23:14:22.511" endtime="20231117 23:14:22.591"/>
+<status status="NOT RUN" starttime="20231208 00:18:18.302" endtime="20231208 00:18:18.302"/>
 </iter>
-<iter>
-<var name="${row}">&lt;selenium.webdriver.remote.webelement.WebElement (session="2d61d2b058aa889bf87f8a2542f1ed2d", element="22C4C604A67C528179B93A1FC1ECFB04_element_527")&gt;</var>
-<kw name="Get WebElement" library="SeleniumLibrary">
-<var>${column}</var>
-<arg>xpath://div[@id='rightPanel']/div/div/h1[.='Account Details']/parent::div/table/tbody/tr/td[1]/following-sibling::td</arg>
-<doc>Returns the first WebElement matching the given ``locator``.</doc>
-<msg timestamp="20231117 23:14:22.603" level="INFO">${column} = &lt;selenium.webdriver.remote.webelement.WebElement (session="2d61d2b058aa889bf87f8a2542f1ed2d", element="22C4C604A67C528179B93A1FC1ECFB04_element_525")&gt;</msg>
-<status status="PASS" starttime="20231117 23:14:22.591" endtime="20231117 23:14:22.603"/>
-</kw>
-<kw name="Log" library="BuiltIn">
-<arg>${row.text}</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20231117 23:14:22.607" level="INFO">Account Type:</msg>
-<status status="PASS" starttime="20231117 23:14:22.603" endtime="20231117 23:14:22.607"/>
-</kw>
-<kw name="Log" library="BuiltIn">
-<arg>${column.text}</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20231117 23:14:22.629" level="INFO"/>
-<status status="PASS" starttime="20231117 23:14:22.607" endtime="20231117 23:14:22.629"/>
-</kw>
-<kw name="Set To Dictionary" library="Collections">
-<arg>${account_details}</arg>
-<arg>${row.text}=${column.text}</arg>
-<doc>Adds the given ``key_value_pairs`` and/or ``items`` to the ``dictionary``.</doc>
-<status status="PASS" starttime="20231117 23:14:22.629" endtime="20231117 23:14:22.667"/>
-</kw>
-<status status="PASS" starttime="20231117 23:14:22.591" endtime="20231117 23:14:22.667"/>
-</iter>
-<iter>
-<var name="${row}">&lt;selenium.webdriver.remote.webelement.WebElement (session="2d61d2b058aa889bf87f8a2542f1ed2d", element="22C4C604A67C528179B93A1FC1ECFB04_element_531")&gt;</var>
-<kw name="Get WebElement" library="SeleniumLibrary">
-<var>${column}</var>
-<arg>xpath://div[@id='rightPanel']/div/div/h1[.='Account Details']/parent::div/table/tbody/tr/td[1]/following-sibling::td</arg>
-<doc>Returns the first WebElement matching the given ``locator``.</doc>
-<msg timestamp="20231117 23:14:22.672" level="INFO">${column} = &lt;selenium.webdriver.remote.webelement.WebElement (session="2d61d2b058aa889bf87f8a2542f1ed2d", element="22C4C604A67C528179B93A1FC1ECFB04_element_525")&gt;</msg>
-<status status="PASS" starttime="20231117 23:14:22.668" endtime="20231117 23:14:22.672"/>
-</kw>
-<kw name="Log" library="BuiltIn">
-<arg>${row.text}</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20231117 23:14:22.692" level="INFO">Balance:</msg>
-<status status="PASS" starttime="20231117 23:14:22.672" endtime="20231117 23:14:22.692"/>
-</kw>
-<kw name="Log" library="BuiltIn">
-<arg>${column.text}</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20231117 23:14:22.704" level="INFO"/>
-<status status="PASS" starttime="20231117 23:14:22.692" endtime="20231117 23:14:22.704"/>
-</kw>
-<kw name="Set To Dictionary" library="Collections">
-<arg>${account_details}</arg>
-<arg>${row.text}=${column.text}</arg>
-<doc>Adds the given ``key_value_pairs`` and/or ``items`` to the ``dictionary``.</doc>
-<status status="PASS" starttime="20231117 23:14:22.705" endtime="20231117 23:14:22.743"/>
-</kw>
-<status status="PASS" starttime="20231117 23:14:22.667" endtime="20231117 23:14:22.743"/>
-</iter>
-<iter>
-<var name="${row}">&lt;selenium.webdriver.remote.webelement.WebElement (session="2d61d2b058aa889bf87f8a2542f1ed2d", element="22C4C604A67C528179B93A1FC1ECFB04_element_535")&gt;</var>
-<kw name="Get WebElement" library="SeleniumLibrary">
-<var>${column}</var>
-<arg>xpath://div[@id='rightPanel']/div/div/h1[.='Account Details']/parent::div/table/tbody/tr/td[1]/following-sibling::td</arg>
-<doc>Returns the first WebElement matching the given ``locator``.</doc>
-<msg timestamp="20231117 23:14:22.755" level="INFO">${column} = &lt;selenium.webdriver.remote.webelement.WebElement (session="2d61d2b058aa889bf87f8a2542f1ed2d", element="22C4C604A67C528179B93A1FC1ECFB04_element_525")&gt;</msg>
-<status status="PASS" starttime="20231117 23:14:22.743" endtime="20231117 23:14:22.755"/>
-</kw>
-<kw name="Log" library="BuiltIn">
-<arg>${row.text}</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20231117 23:14:22.768" level="INFO">Available:</msg>
-<status status="PASS" starttime="20231117 23:14:22.755" endtime="20231117 23:14:22.768"/>
-</kw>
-<kw name="Log" library="BuiltIn">
-<arg>${column.text}</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20231117 23:14:22.780" level="INFO"/>
-<status status="PASS" starttime="20231117 23:14:22.768" endtime="20231117 23:14:22.780"/>
-</kw>
-<kw name="Set To Dictionary" library="Collections">
-<arg>${account_details}</arg>
-<arg>${row.text}=${column.text}</arg>
-<doc>Adds the given ``key_value_pairs`` and/or ``items`` to the ``dictionary``.</doc>
-<status status="PASS" starttime="20231117 23:14:22.780" endtime="20231117 23:14:22.818"/>
-</kw>
-<status status="PASS" starttime="20231117 23:14:22.743" endtime="20231117 23:14:22.818"/>
-</iter>
-<status status="PASS" starttime="20231117 23:14:22.511" endtime="20231117 23:14:22.818"/>
+<status status="NOT RUN" starttime="20231208 00:18:18.302" endtime="20231208 00:18:18.302"/>
 </for>
 <kw name="Log" library="BuiltIn">
 <arg>${account_details}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20231117 23:14:22.819" level="INFO">{'Account Number:': '', 'Account Type:': '', 'Balance:': '', 'Available:': ''}</msg>
-<status status="PASS" starttime="20231117 23:14:22.818" endtime="20231117 23:14:22.819"/>
+<status status="NOT RUN" starttime="20231208 00:18:18.302" endtime="20231208 00:18:18.303"/>
 </kw>
-<status status="PASS" starttime="20231117 23:14:21.376" endtime="20231117 23:14:22.819"/>
+<status status="FAIL" starttime="20231208 00:18:07.855" endtime="20231208 00:18:18.303"/>
 </kw>
 <kw name="Get all Account Details" library="AccountOverviewPage">
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>xpath://table/thead</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20231117 23:14:22.820" endtime="20231117 23:14:23.084"/>
-</kw>
-<kw name="Get WebElements" library="SeleniumLibrary">
-<var>@{headers}</var>
-<arg>xpath://table/thead/tr/th</arg>
-<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
-<msg timestamp="20231117 23:14:23.115" level="INFO">@{headers} = [ &lt;selenium.webdriver.remote.webelement.WebElement (session="2d61d2b058aa889bf87f8a2542f1ed2d", element="22C4C604A67C528179B93A1FC1ECFB04_element_625")&gt; | &lt;selenium.webdriver.remote.webelement.WebElem...</msg>
-<status status="PASS" starttime="20231117 23:14:23.084" endtime="20231117 23:14:23.115"/>
-</kw>
-<kw name="Create List" library="BuiltIn">
-<var>@{headers_list}</var>
-<doc>Returns a list containing given items.</doc>
-<msg timestamp="20231117 23:14:23.115" level="INFO">@{headers_list} = [ ]</msg>
-<status status="PASS" starttime="20231117 23:14:23.115" endtime="20231117 23:14:23.115"/>
-</kw>
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>xpath://table/tbody</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20231117 23:14:23.115" endtime="20231117 23:14:23.146"/>
-</kw>
-<for flavor="IN">
-<var>${header}</var>
-<value>@{headers}</value>
-<iter>
-<var name="${header}">&lt;selenium.webdriver.remote.webelement.WebElement (session="2d61d2b058aa889bf87f8a2542f1ed2d", element="22C4C604A67C528179B93A1FC1ECFB04_element_625")&gt;</var>
-<kw name="Append To List" library="Collections">
-<arg>${headers_list}</arg>
-<arg>${header.text}</arg>
-<doc>Adds ``values`` to the end of ``list``.</doc>
-<status status="PASS" starttime="20231117 23:14:23.146" endtime="20231117 23:14:23.146"/>
-</kw>
-<status status="PASS" starttime="20231117 23:14:23.146" endtime="20231117 23:14:23.146"/>
-</iter>
-<iter>
-<var name="${header}">&lt;selenium.webdriver.remote.webelement.WebElement (session="2d61d2b058aa889bf87f8a2542f1ed2d", element="22C4C604A67C528179B93A1FC1ECFB04_element_627")&gt;</var>
-<kw name="Append To List" library="Collections">
-<arg>${headers_list}</arg>
-<arg>${header.text}</arg>
-<doc>Adds ``values`` to the end of ``list``.</doc>
-<status status="PASS" starttime="20231117 23:14:23.146" endtime="20231117 23:14:23.173"/>
-</kw>
-<status status="PASS" starttime="20231117 23:14:23.146" endtime="20231117 23:14:23.173"/>
-</iter>
-<iter>
-<var name="${header}">&lt;selenium.webdriver.remote.webelement.WebElement (session="2d61d2b058aa889bf87f8a2542f1ed2d", element="22C4C604A67C528179B93A1FC1ECFB04_element_629")&gt;</var>
-<kw name="Append To List" library="Collections">
-<arg>${headers_list}</arg>
-<arg>${header.text}</arg>
-<doc>Adds ``values`` to the end of ``list``.</doc>
-<status status="PASS" starttime="20231117 23:14:23.173" endtime="20231117 23:14:23.177"/>
-</kw>
-<status status="PASS" starttime="20231117 23:14:23.173" endtime="20231117 23:14:23.177"/>
-</iter>
-<iter>
-<var name="${header}">&lt;selenium.webdriver.remote.webelement.WebElement (session="2d61d2b058aa889bf87f8a2542f1ed2d", element="22C4C604A67C528179B93A1FC1ECFB04_element_631")&gt;</var>
-<kw name="Append To List" library="Collections">
-<arg>${headers_list}</arg>
-<arg>${header.text}</arg>
-<doc>Adds ``values`` to the end of ``list``.</doc>
-<status status="PASS" starttime="20231117 23:14:23.177" endtime="20231117 23:14:23.193"/>
-</kw>
-<status status="PASS" starttime="20231117 23:14:23.177" endtime="20231117 23:14:23.193"/>
-</iter>
-<status status="PASS" starttime="20231117 23:14:23.146" endtime="20231117 23:14:23.193"/>
-</for>
-<kw name="Get Length" library="BuiltIn">
-<var>${header_count}</var>
-<arg>${headers_list}</arg>
-<doc>Returns and logs the length of the given item as an integer.</doc>
-<msg timestamp="20231117 23:14:23.193" level="INFO">Length is 4</msg>
-<msg timestamp="20231117 23:14:23.193" level="INFO">${header_count} = 4</msg>
-<status status="PASS" starttime="20231117 23:14:23.193" endtime="20231117 23:14:23.193"/>
-</kw>
-<kw name="Log" library="BuiltIn">
-<arg>The table has ${header_count} columns.</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20231117 23:14:23.193" level="INFO">The table has 4 columns.</msg>
-<status status="PASS" starttime="20231117 23:14:23.193" endtime="20231117 23:14:23.193"/>
-</kw>
-<kw name="Log" library="BuiltIn">
-<arg>${headers_list}</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20231117 23:14:23.193" level="INFO">['Date', 'Transaction', 'Debit (-)', 'Credit (+)']</msg>
-<status status="PASS" starttime="20231117 23:14:23.193" endtime="20231117 23:14:23.193"/>
-</kw>
-<kw name="Get WebElements" library="SeleniumLibrary">
-<var>@{numbers_of_accounts}</var>
-<arg>xpath://table/tbody/tr/td/a</arg>
-<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
-<msg timestamp="20231117 23:14:23.208" level="INFO">@{numbers_of_accounts} = [ &lt;selenium.webdriver.remote.webelement.WebElement (session="2d61d2b058aa889bf87f8a2542f1ed2d", element="22C4C604A67C528179B93A1FC1ECFB04_element_637")&gt; ]</msg>
-<status status="PASS" starttime="20231117 23:14:23.193" endtime="20231117 23:14:23.208"/>
-</kw>
-<kw name="Get Length" library="BuiltIn">
-<var>${user_account_count}</var>
-<arg>${numbers_of_accounts}</arg>
-<doc>Returns and logs the length of the given item as an integer.</doc>
-<msg timestamp="20231117 23:14:23.208" level="INFO">Length is 1</msg>
-<msg timestamp="20231117 23:14:23.208" level="INFO">${user_account_count} = 1</msg>
-<status status="PASS" starttime="20231117 23:14:23.208" endtime="20231117 23:14:23.208"/>
-</kw>
-<kw name="Log" library="BuiltIn">
-<arg>The user has ${user_account_count} account(s).</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20231117 23:14:23.208" level="INFO">The user has 1 account(s).</msg>
-<status status="PASS" starttime="20231117 23:14:23.208" endtime="20231117 23:14:23.208"/>
-</kw>
-<kw name="Create List" library="BuiltIn">
-<var>@{all_accounts_list}</var>
-<doc>Returns a list containing given items.</doc>
-<msg timestamp="20231117 23:14:23.208" level="INFO">@{all_accounts_list} = [ ]</msg>
-<status status="PASS" starttime="20231117 23:14:23.208" endtime="20231117 23:14:23.208"/>
-</kw>
-<for flavor="IN">
-<var>${each_account}</var>
-<value>@{numbers_of_accounts}</value>
-<iter>
-<var name="${each_account}">&lt;selenium.webdriver.remote.webelement.WebElement (session="2d61d2b058aa889bf87f8a2542f1ed2d", element="22C4C604A67C528179B93A1FC1ECFB04_element_637")&gt;</var>
-<kw name="Create Dictionary" library="BuiltIn">
-<var>&amp;{account_details}</var>
-<doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<msg timestamp="20231117 23:14:23.208" level="INFO">&amp;{account_details} = { }</msg>
-<status status="PASS" starttime="20231117 23:14:23.208" endtime="20231117 23:14:23.208"/>
-</kw>
-<for flavor="IN">
-<var>${account}</var>
-<value>@{numbers_of_accounts}</value>
-<iter>
-<var name="${account}">&lt;selenium.webdriver.remote.webelement.WebElement (session="2d61d2b058aa889bf87f8a2542f1ed2d", element="22C4C604A67C528179B93A1FC1ECFB04_element_637")&gt;</var>
-<kw name="Get WebElement" library="SeleniumLibrary">
-<var>${balance}</var>
-<arg>xpath://table/tbody/tr/td/a[.='${account.text}']/parent::td//following-sibling::td[1]</arg>
-<doc>Returns the first WebElement matching the given ``locator``.</doc>
-<msg timestamp="20231117 23:14:23.240" level="INFO">${balance} = &lt;selenium.webdriver.remote.webelement.WebElement (session="2d61d2b058aa889bf87f8a2542f1ed2d", element="22C4C604A67C528179B93A1FC1ECFB04_element_639")&gt;</msg>
-<status status="PASS" starttime="20231117 23:14:23.208" endtime="20231117 23:14:23.240"/>
-</kw>
-<kw name="Get WebElement" library="SeleniumLibrary">
-<var>${available_amount}</var>
-<arg>xpath://table/tbody/tr/td/a[.='${account.text}']/parent::td//following-sibling::td[2]</arg>
-<doc>Returns the first WebElement matching the given ``locator``.</doc>
-<msg timestamp="20231117 23:14:23.272" level="INFO">${available_amount} = &lt;selenium.webdriver.remote.webelement.WebElement (session="2d61d2b058aa889bf87f8a2542f1ed2d", element="22C4C604A67C528179B93A1FC1ECFB04_element_640")&gt;</msg>
-<status status="PASS" starttime="20231117 23:14:23.240" endtime="20231117 23:14:23.272"/>
-</kw>
-<kw name="Set To Dictionary" library="Collections">
-<arg>${account_details}</arg>
-<arg>${headers_list}[0]=${account.text}</arg>
-<arg>${headers_list}[1]=${balance.text}</arg>
-<arg>${headers_list}[2]=${available_amount.text}</arg>
-<doc>Adds the given ``key_value_pairs`` and/or ``items`` to the ``dictionary``.</doc>
-<status status="PASS" starttime="20231117 23:14:23.272" endtime="20231117 23:14:23.302"/>
-</kw>
-<status status="PASS" starttime="20231117 23:14:23.208" endtime="20231117 23:14:23.302"/>
-</iter>
-<status status="PASS" starttime="20231117 23:14:23.208" endtime="20231117 23:14:23.302"/>
-</for>
-<kw name="Append To List" library="Collections">
-<arg>${all_accounts_list}</arg>
-<arg>${account_details}</arg>
-<doc>Adds ``values`` to the end of ``list``.</doc>
-<status status="PASS" starttime="20231117 23:14:23.302" endtime="20231117 23:14:23.302"/>
-</kw>
-<status status="PASS" starttime="20231117 23:14:23.208" endtime="20231117 23:14:23.302"/>
-</iter>
-<status status="PASS" starttime="20231117 23:14:23.208" endtime="20231117 23:14:23.302"/>
-</for>
-<kw name="Log" library="BuiltIn">
-<arg>${all_accounts_list}</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20231117 23:14:23.302" level="INFO">[{'Date': 'Funds Transfer Received', 'Transaction': '', 'Debit (-)': '$100.00'}]</msg>
-<status status="PASS" starttime="20231117 23:14:23.302" endtime="20231117 23:14:23.302"/>
-</kw>
-<status status="PASS" starttime="20231117 23:14:22.819" endtime="20231117 23:14:23.302"/>
+<status status="NOT RUN" starttime="20231208 00:18:18.303" endtime="20231208 00:18:18.303"/>
 </kw>
 <kw name="Close Browser Session" library="Generic" type="TEARDOWN">
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20231117 23:14:23.302" endtime="20231117 23:14:25.568"/>
+<status status="PASS" starttime="20231208 00:18:18.305" endtime="20231208 00:18:20.665"/>
 </kw>
-<status status="PASS" starttime="20231117 23:14:23.302" endtime="20231117 23:14:25.568"/>
+<status status="PASS" starttime="20231208 00:18:18.304" endtime="20231208 00:18:20.665"/>
 </kw>
-<status status="PASS" starttime="20231117 23:14:08.067" endtime="20231117 23:14:25.568"/>
+<status status="FAIL" starttime="20231208 00:17:54.521" endtime="20231208 00:18:20.666">Element '//a[@id='newAccountId']' not visible after 5 seconds.</status>
 </test>
 <doc>To validate the Account Overview page</doc>
-<status status="PASS" starttime="20231117 23:13:52.786" endtime="20231117 23:14:25.568"/>
+<status status="FAIL" starttime="20231208 00:17:54.090" endtime="20231208 00:18:20.668"/>
 </suite>
 <statistics>
 <total>
-<stat pass="2" fail="0" skip="0">All Tests</stat>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="2" fail="0" skip="0" id="s1" name="TS03 accounts">TS03 accounts</stat>
+<stat pass="0" fail="1" skip="0" id="s1" name="TS03 accounts">TS03 accounts</stat>
 </suite>
 </statistics>
 <errors>
