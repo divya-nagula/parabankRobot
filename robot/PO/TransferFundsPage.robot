@@ -6,7 +6,6 @@ Library          Collections
 Library          Dialogs
 
 *** Variables ***
-${account_type}         CHECKING
 
 *** Keywords ***
 Transfer funds
@@ -21,4 +20,5 @@ Transfer funds
     Wait Until Page Contains    ${amount_from user}
     ${page_title}=    Get Text    xpath://h1
     Log    ${page_title}
-    Element Should Contain        //div[@id='rightPanel']/div/div/p[1]    $${amount_from_user}.00 has been transferred
+    Element Should Contain    //div[@id='rightPanel']/div/div/p[1]    $${amount_from_user}.00 has been transferred
+    

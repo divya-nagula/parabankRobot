@@ -15,7 +15,7 @@ ${url}                  https://parabank.parasoft.com/parabank/index.htm
 ${browser_name}         Chrome
 ${file_name}            screenshots
 ${default_screenshot_path}      C:\Users\bittu.saishreyas\PycharmProjects\GitPush\parabankRobotProject\Screenshots
-${title}                        css:.title
+${title}                css:.title
 *** Keywords ***
 Init
 	Register Keyword To Run On Failure  Screenshots_Directory

@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.11.5 on win32)" generated="20231209 15:56:54.726" rpa="false" schemaversion="4">
+    <suite id="s1" name="TS05 billPay"
+           source="C:\Users\bittu.saishreyas\PycharmProjects\GitPush\parabankRobotProject\tests\TS05_billPay.robot">
+        <kw name="Init" library="Generic" type="SETUP">
+            <kw name="Register Keyword To Run On Failure" library="SeleniumLibrary">
+                <arg>Screenshots_Directory</arg>
+                <doc>Sets the keyword to execute, when a SeleniumLibrary keyword fails.</doc>
+                <msg timestamp="20231209 15:56:55.148" level="INFO">Screenshots_Directory will be run on failure.</msg>
+                <status status="PASS" starttime="20231209 15:56:55.148" endtime="20231209 15:56:55.148"/>
+            </kw>
+            <status status="PASS" starttime="20231209 15:56:55.148" endtime="20231209 15:56:55.148"/>
+        </kw>
+        <test id="s1-t1" name="TC01 Bill Pay to Account Number" line="17">
+            <kw name="open the browser with url" library="Generic" type="SETUP">
+                <kw name="Create Webdriver" library="SeleniumLibrary">
+                    <arg>${browser_name}</arg>
+                    <arg>resources/${browser_name}</arg>
+                    <doc>Creates an instance of Selenium WebDriver.</doc>
+                    <msg timestamp="20231209 15:56:55.148" level="INFO">Creating an instance of the Chrome WebDriver.
+                    </msg>
+                    <status status="PASS" starttime="20231209 15:56:55.148" endtime="20231209 15:56:57.222"/>
+                </kw>
+                <kw name="Delete All Cookies" library="SeleniumLibrary">
+                    <doc>Deletes all cookies.</doc>
+                    <status status="PASS" starttime="20231209 15:56:57.222" endtime="20231209 15:56:59.468"/>
+                </kw>
+                <kw name="Go To" library="SeleniumLibrary">
+                    <arg>${url}</arg>
+                    <doc>Navigates the current browser window to the provided ``url``.</doc>
+                    <msg timestamp="20231209 15:56:59.468" level="INFO">Opening url
+                        'https://parabank.parasoft.com/parabank/index.htm'
+                    </msg>
+                    <status status="PASS" starttime="20231209 15:56:59.468" endtime="20231209 15:57:04.578"/>
+                </kw>
+                <kw name="Maximize Browser Window" library="SeleniumLibrary">
+                    <doc>Maximizes current browser window.</doc>
+                    <status status="PASS" starttime="20231209 15:57:04.578" endtime="20231209 15:57:04.703"/>
+                </kw>
+                <status status="PASS" starttime="20231209 15:56:55.148" endtime="20231209 15:57:04.703"/>
+            </kw>
+            <kw name="Fill the login form" library="LandingPage">
+                <arg>${username}</arg>
+                <arg>${password}</arg>
+                <kw name="Input Text" library="SeleniumLibrary">
+                    <arg>css:.input[name='username']</arg>
+                    <arg>${username}</arg>
+                    <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+                    <msg timestamp="20231209 15:57:04.703" level="INFO">Typing text 'first1' into text field
+                        'css:.input[name='username']'.
+                    </msg>
+                    <status status="PASS" starttime="20231209 15:57:04.703" endtime="20231209 15:57:04.851"/>
+                </kw>
+                <kw name="Input Password" library="SeleniumLibrary">
+                    <arg>css:.input[name='password']</arg>
+                    <arg>${password}</arg>
+                    <doc>Types the given password into the text field identified by ``locator``.</doc>
+                    <msg timestamp="20231209 15:57:04.852" level="INFO">Typing password into text field
+                        'css:.input[name='password']'.
+                    </msg>
+                    <msg timestamp="20231209 15:57:04.899" level="INFO">Temporally setting log level to: NONE</msg>
+                    <msg timestamp="20231209 15:57:04.975" level="INFO">Log level changed from NONE to INFO.</msg>
+                    <status status="PASS" starttime="20231209 15:57:04.852" endtime="20231209 15:57:04.975"/>
+                </kw>
+                <kw name="Click Button" library="SeleniumLibrary">
+                    <arg>css:.button[value='Log In']</arg>
+                    <doc>Clicks the button identified by ``locator``.</doc>
+                    <msg timestamp="20231209 15:57:04.975" level="INFO">Clicking button 'css:.button[value='Log In']'.
+                    </msg>
+                    <status status="PASS" starttime="20231209 15:57:04.975" endtime="20231209 15:57:06.471"/>
+                </kw>
+                <status status="PASS" starttime="20231209 15:57:04.703" endtime="20231209 15:57:06.471"/>
+            </kw>
+            <kw name="Fill Bill Payment form and click Send Payment" library="BillPayPage">
+                <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+                    <arg>${title}</arg>
+                    <doc>Waits until the element ``locator`` is visible.</doc>
+                    <status status="PASS" starttime="20231209 15:57:06.474" endtime="20231209 15:57:06.517"/>
+                </kw>
+                <kw name="Click Element" library="SeleniumLibrary">
+                    <arg>xpath://div[@id='leftPanel']/ul/li/a[.='Bill Pay']</arg>
+                    <doc>Click the element identified by ``locator``.</doc>
+                    <msg timestamp="20231209 15:57:06.517" level="INFO">Clicking element
+                        'xpath://div[@id='leftPanel']/ul/li/a[.='Bill Pay']'.
+                    </msg>
+                    <status status="PASS" starttime="20231209 15:57:06.517" endtime="20231209 15:57:07.289"/>
+                </kw>
+                <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+                    <arg>${title}</arg>
+                    <doc>Waits until the element ``locator`` is visible.</doc>
+                    <status status="PASS" starttime="20231209 15:57:07.289" endtime="20231209 15:57:07.322"/>
+                </kw>
+                <kw name="Element Text Should Be" library="SeleniumLibrary">
+                    <arg>${title}</arg>
+                    <arg>Bill Payment Service</arg>
+                    <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+                    <msg timestamp="20231209 15:57:07.323" level="INFO">Verifying element 'css:.title' contains exact
+                        text 'Bill Payment Service'.
+                    </msg>
+                    <status status="PASS" starttime="20231209 15:57:07.322" endtime="20231209 15:57:07.350"/>
+                </kw>
+                <kw name="Input Text" library="SeleniumLibrary">
+                    <arg>xpath://input[@name='payee.name']</arg>
+                    <arg>payeeName</arg>
+                    <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+                    <msg timestamp="20231209 15:57:07.351" level="INFO">Typing text 'payeeName' into text field
+                        'xpath://input[@name='payee.name']'.
+                    </msg>
+                    <status status="PASS" starttime="20231209 15:57:07.350" endtime="20231209 15:57:07.484"/>
+                </kw>
+                <kw name="Input Text" library="SeleniumLibrary">
+                    <arg>xpath://input[@name='payee.address.street']</arg>
+                    <arg>payeeAddress</arg>
+                    <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+                    <msg timestamp="20231209 15:57:07.485" level="INFO">Typing text 'payeeAddress' into text field
+                        'xpath://input[@name='payee.address.street']'.
+                    </msg>
+                    <status status="PASS" starttime="20231209 15:57:07.484" endtime="20231209 15:57:07.628"/>
+                </kw>
+                <kw name="Input Text" library="SeleniumLibrary">
+                    <arg>xpath://input[@name='payee.address.city']</arg>
+                    <arg>payeeCity</arg>
+                    <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+                    <msg timestamp="20231209 15:57:07.629" level="INFO">Typing text 'payeeCity' into text field
+                        'xpath://input[@name='payee.address.city']'.
+                    </msg>
+                    <status status="PASS" starttime="20231209 15:57:07.628" endtime="20231209 15:57:07.768"/>
+                </kw>
+                <kw name="Input Text" library="SeleniumLibrary">
+                    <arg>xpath://input[@name='payee.address.state']</arg>
+                    <arg>payeeState</arg>
+                    <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+                    <msg timestamp="20231209 15:57:07.768" level="INFO">Typing text 'payeeState' into text field
+                        'xpath://input[@name='payee.address.state']'.
+                    </msg>
+                    <status status="PASS" starttime="20231209 15:57:07.768" endtime="20231209 15:57:07.902"/>
+                </kw>
+                <kw name="Input Text" library="SeleniumLibrary">
+                    <arg>xpath://input[@name='payee.address.zipCode']</arg>
+                    <arg>44115</arg>
+                    <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+                    <msg timestamp="20231209 15:57:07.902" level="INFO">Typing text '44115' into text field
+                        'xpath://input[@name='payee.address.zipCode']'.
+                    </msg>
+                    <status status="PASS" starttime="20231209 15:57:07.902" endtime="20231209 15:57:08.022"/>
+                </kw>
+                <kw name="Input Text" library="SeleniumLibrary">
+                    <arg>xpath://input[@name='payee.phoneNumber']</arg>
+                    <arg>8547596456</arg>
+                    <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+                    <msg timestamp="20231209 15:57:08.022" level="INFO">Typing text '8547596456' into text field
+                        'xpath://input[@name='payee.phoneNumber']'.
+                    </msg>
+                    <status status="PASS" starttime="20231209 15:57:08.022" endtime="20231209 15:57:08.170"/>
+                </kw>
+                <kw name="Input Text" library="SeleniumLibrary">
+                    <arg>xpath://input[@name='payee.accountNumber']</arg>
+                    <arg>52145</arg>
+                    <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+                    <msg timestamp="20231209 15:57:08.170" level="INFO">Typing text '52145' into text field
+                        'xpath://input[@name='payee.accountNumber']'.
+                    </msg>
+                    <status status="PASS" starttime="20231209 15:57:08.170" endtime="20231209 15:57:08.306"/>
+                </kw>
+                <kw name="Input Text" library="SeleniumLibrary">
+                    <arg>xpath://input[@name='verifyAccount']</arg>
+                    <arg>52145</arg>
+                    <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+                    <msg timestamp="20231209 15:57:08.306" level="INFO">Typing text '52145' into text field
+                        'xpath://input[@name='verifyAccount']'.
+                    </msg>
+                    <status status="PASS" starttime="20231209 15:57:08.306" endtime="20231209 15:57:08.435"/>
+                </kw>
+                <kw name="Input Text" library="SeleniumLibrary">
+                    <arg>xpath://input[@name='amount']</arg>
+                    <arg>400</arg>
+                    <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+                    <msg timestamp="20231209 15:57:08.435" level="INFO">Typing text '400' into text field
+                        'xpath://input[@name='amount']'.
+                    </msg>
+                    <status status="PASS" starttime="20231209 15:57:08.435" endtime="20231209 15:57:08.554"/>
+                </kw>
+                <kw name="Click Button" library="SeleniumLibrary">
+                    <arg>css:.button[value='Send Payment']</arg>
+                    <doc>Clicks the button identified by ``locator``.</doc>
+                    <msg timestamp="20231209 15:57:08.554" level="INFO">Clicking button 'css:.button[value='Send
+                        Payment']'.
+                    </msg>
+                    <status status="PASS" starttime="20231209 15:57:08.554" endtime="20231209 15:57:08.649"/>
+                </kw>
+                <kw name="Wait Until Page Contains" library="SeleniumLibrary">
+                    <arg>Bill Payment Complete</arg>
+                    <doc>Waits until ``text`` appears on the current page.</doc>
+                    <status status="PASS" starttime="20231209 15:57:08.650" endtime="20231209 15:57:08.665"/>
+                </kw>
+                <status status="PASS" starttime="20231209 15:57:06.473" endtime="20231209 15:57:08.665"/>
+            </kw>
+            <kw name="Close Browser Session" library="Generic" type="TEARDOWN">
+                <kw name="Close Browser" library="SeleniumLibrary">
+                    <doc>Closes the current browser.</doc>
+                    <status status="PASS" starttime="20231209 15:57:08.666" endtime="20231209 15:57:10.883"/>
+                </kw>
+                <status status="PASS" starttime="20231209 15:57:08.666" endtime="20231209 15:57:10.883"/>
+            </kw>
+            <status status="PASS" starttime="20231209 15:56:55.148" endtime="20231209 15:57:10.883"/>
+        </test>
+        <doc>To validate the Account Overview page</doc>
+        <status status="PASS" starttime="20231209 15:56:54.726" endtime="20231209 15:57:10.883"/>
+    </suite>
+    <statistics>
+        <total>
+            <stat pass="1" fail="0" skip="0">All Tests</stat>
+        </total>
+        <tag>
+        </tag>
+        <suite>
+            <stat pass="1" fail="0" skip="0" id="s1" name="TS05 billPay">TS05 billPay</stat>
+        </suite>
+    </statistics>
+    <errors>
+    </errors>
+</robot>

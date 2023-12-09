@@ -12,8 +12,6 @@ Resource         ../PO/LandingPage.robot
 Resource         ../PO/TransferFundsPage.robot
 
 *** Variables ***
-${no_user}      ${EMPTY}
-${no_password}  ${EMPTY}
 
 *** Test Cases ***
 TC01 Transfer Funds from one account to another
