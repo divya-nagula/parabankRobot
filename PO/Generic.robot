@@ -9,7 +9,7 @@ Library          OperatingSystem
 Library          DateTime
 
 *** Variables ***
-${user_name}            first6
+${user_name}            first1
 ${password}             password
 ${url}                  https://parabank.parasoft.com/parabank/index.htm
 ${browser_name}         Chrome

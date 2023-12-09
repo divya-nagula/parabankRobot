@@ -8,5 +8,6 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="pythonSelFramework1" />
     <orderEntry type="module" module-name="guru99insurance" />
+    <orderEntry type="module" module-name="automationExercise" />
   </component>
 </module>

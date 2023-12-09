@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../../automationExercise/.idea/automationExercise.iml" filepath="$PROJECT_DIR$/../../automationExercise/.idea/automationExercise.iml" />
       <module fileurl="file://$PROJECT_DIR$/../../guru99insurance/.idea/guru99insurance.iml" filepath="$PROJECT_DIR$/../../guru99insurance/.idea/guru99insurance.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/parabankRobotProject.iml" filepath="$PROJECT_DIR$/.idea/parabankRobotProject.iml" />
       <module fileurl="file://$PROJECT_DIR$/../../pythonSelFramework1/.idea/pythonSelFramework1.iml" filepath="$PROJECT_DIR$/../../pythonSelFramework1/.idea/pythonSelFramework1.iml" />
